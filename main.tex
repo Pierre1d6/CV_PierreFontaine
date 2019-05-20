@@ -1,0 +1,85 @@
+% Exemple de CV utilisant la classe moderncv
+% Style classic en bleu
+% Article complet : https://blog.madrzejewski.com/creer-cv-elegant-latex-moderncv/
+
+\documentclass[10pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}                
+\usepackage[utf8]{inputenc}
+\usepackage[inline]{enumitem}
+% Marge aux 4 coins de la page, ici elles sont réduites pour gagner de la place
+\usepackage[top=1.0cm, bottom=1.0cm, left=1.6cm, right=1.6cm]{geometry}
+% Largeur de la colonne de gauche pour les dates
+\setlength{\hintscolumnwidth}{3.5cm}
+
+\firstname{Pierre}
+\familyname{Fontaine}
+          
+\address{13 Rue de la Taurellerie}{35700 Rennes}{France}
+\email{pierre.fontaine.pf@gmail.com}                      
+\mobile{+336-199-837-68} 
+
+\begin{document}
+\maketitle
+% Marge négative entre le titre et la partie expérience, pour gagner de la place
+\vspace*{-2.5\baselineskip}
+
+\section{Expériences Professionelles}
+
+\cventry{Mars 2018–Sept. 2018}{Stage Master 2 SISEA}{LTSI}{Rennes}{}{
+Développement d’un algorithme en c++/python pour l’extraction de features pour caractériser la/les
+tumeur(s) puis analyse de celle(s)-ci pour qualifier la prédiction de la récidive.
+}
+
+\cventry{Mai 2017-Juil. 2017}{Stage Master 1 électronique et Télécommunications}{LTSI}{Rennes (35)}{}{
+Radiomics : analyse de textures en IRM hépatique et extraction de signatures prédictives de la survie
+après radiothérapie stéréotaxique pour un carcinome hépatocellulaire.
+}
+
+\cventry{2016-2017}{Agent de Cinéma}{Cinéma Gaumont Pathé}{Rennes (35)}{}{
+Accueil des clients \\
+Ventes de billets et confiseries \\
+Entretien des salles
+}
+
+\cventry{2011-2016}{Aide à l'apprentissage}{A domicile}{}{}{
+Soutien scolaire en Mathématiques (Niveau Lycée et concours infirmier).
+}
+
+\cventry{Avril 2015-Juin 2015}{Stage IUT Génie électronique et informatique industrielle}{IETR}{Rennes (35)}{}{
+Développement d’un banc d’essai pour la caractérisation semi/automatique de matrices de transistors
+sur substrats souples (technologie organique).
+}
+
+\cventry{2013-2014}{Ouvrier polyvalent en chaudronnerie}{SARL Lefranc}{Saint Quentin sur le Homme (50)}{}{
+Création de plan de fabrication \\
+Soudure Acier/Aluminium au MIG et TIG \\
+Création de pièces au tour et à la fraise.
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\'{E}tudes}
+
+\cventry{2013-2015}{DUT Génie Électronique et informatique industrielle}{IUT}{REennes (35)}{}{}
+
+\cventry{2015-2016}{Licence 3 Électronique et Télécommunications}{Université Rennes 1}{Rennes (35)}{}{}
+
+\cventry{2016-2017}{Master 1 Électronique et Télécommunications}{Université Rennes 1}{Rennes (35)}{Option Image}{}
+
+\cventry{2017-2018}{Master 2 SISEA - Signal Image Système embarqué Automatique}{Université Rennes 1}{Rennes (35)}{}{}
+
+\cventry{2018-2021}{Phd Student : Medical Image Processing}{Université Rennes 1 \& HES-SO Valais/Wallis }{Rennes (35) \& Sierre (3960)}{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projets}
+\cventry{2017}{Module de reconnaissance faciale 2D}{}{}{}{Développement d’un module de reconnaissance faciale sous Matlab}. 
+
+\cventry{2016}{Asservissement en vitesse d’un robot}{}{}{}{Développement d’un module d’asservissement en vitesse}
+
+\cventry{2015}{Détecteur de proximité}{}{}{}{Détection de proximité à partir des ultrasons}
+
+\cventry{2014}{Wii Robot}{}{}{}{Piloter un robot avec une manette de Wii}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Compétences}
+\cvdoubleitem{Langue}{Anglais : Bon Niveau}{Langages}{C/C++ \\ Python \\ Shell}
+\cvdoubleitem{OS}{Windows XP, Seven,10. \\ GNU/Linux : Ubuntu, Debian}{Outils}{Matlab \\ \LaTeX \\ Suite Microsoft Office et LibreOffice.}
+\end{document}
